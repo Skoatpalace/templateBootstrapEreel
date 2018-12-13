@@ -1778,10 +1778,15 @@ fieldset[disabled] .form-control {
 
 .table .radio,
 .table .checkbox {
+	position: absolute;
+    height: 80%; 
+    width: 80%; 
+    top: 10%; 
+    left: 10%
     position: relative;
-    height: 20px;
+   /* height: 20px;
     display: block;
-    width: 20px;
+    width: 20px;*/
     padding: 0px 0px;
     margin: 0px 5px;
     text-align: center;
