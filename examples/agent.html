@@ -72,63 +72,36 @@
 		<div class="main-panel">
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg " color-on-scroll="500">
-				<div class=" container-fluid  ">
-					<a class="navbar-brand" href="#pablo"> Agents </a>
-					<button href="" class="navbar-toggler navbar-toggler-right"
-						type="button" data-toggle="collapse"
-						aria-controls="navigation-index" aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-bar burger-lines"></span> <span
-							class="navbar-toggler-bar burger-lines"></span> <span
-							class="navbar-toggler-bar burger-lines"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end"
-						id="navigation">
-						<ul class="nav navbar-nav mr-auto">
-							<li class="nav-item"><a href="#" class="nav-link"
-								data-toggle="dropdown"> <i class="nc-icon nc-palette"></i> <span
-									class="d-lg-none">Tableau de bord</span>
-							</a></li>
-							<li class="dropdown nav-item"><a href="#"
-								class="dropdown-toggle nav-link" data-toggle="dropdown"> <i
-									class="nc-icon nc-planet"></i> <span class="notification">4</span>
-									<span class="d-lg-none">Notifications</span>
-							</a>
-								<ul class="dropdown-menu">
-									<a class="dropdown-item" href="#">Relevé reçu : 1</a>
-									<a class="dropdown-item" href="#">rapport de tâche : 2</a>
-									<a class="dropdown-item" href="#">Rapport d'activité : 1</a>
-								</ul></li>
-							<li class="nav-item"><a href="#" class="nav-link"> <i
-									class="nc-icon nc-zoom-split"></i> <span class="d-lg-block">&nbsp;Rechercher</span>
-							</a></li>
-						</ul>
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="#pablo">
-									<span class="no-icon">Mon compte</span>
-							</a></li>
-							<li class="nav-item dropdown"><a
-								class="nav-link dropdown-toggle" href="http://example.com"
-								id="navbarDropdownMenuLink" data-toggle="dropdown"
-								aria-haspopup="true" aria-expanded="false"> <span
-									class="no-icon">Reglages</span>
-							</a>
-								<div class="dropdown-menu"
-									aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Action</a> <a
-										class="dropdown-item" href="#">Action</a> <a
-										class="dropdown-item" href="#">Action</a> <a
-										class="dropdown-item" href="#">Action</a>
-									<div class="divider"></div>
-									<a class="dropdown-item" href="#">Separated link</a>
-								</div></li>
-							<li class="nav-item"><a class="nav-link" href="#pablo">
-									<span class="no-icon">Deconnexion</span>
-							</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+                <div class=" container-fluid  ">
+                    <a class="navbar-brand" href="#pablo"> Agents </a>
+                    <button href="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                        <span class="navbar-toggler-bar burger-lines"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="dropdown">
+                                  
+                                    <span class="d-lg-none">Agents</span>
+                                </a>
+                            </li>                        
+                           
+                        </ul>
+                        <ul class="navbar-nav ml-auto" id="deconnexion">                          
+                            
+                           
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pablo">
+                                    <span class="no-icon">Deconnexion</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 			<!-- End Navbar -->
 			<button type="button" data-toggle="modal" data-target="#infos"
 				class="btn btn-sm-md-1">+</button>
@@ -155,12 +128,18 @@
 															class="form-control" placeholder="Company">
 													</div>
 												</div>
-												<div></div>
+												
 												<div class="row">
-													<div class="col-md-12">
+													<div class="col-md-6">
 														<div class="form-group">
 															<label>Adresse e-mail</label> <input type="text"
 																class="form-control" placeholder="Adresse e-mail">
+														</div>
+													</div>
+													<div class="col-md-6">
+														<div class="form-group">
+															<label>Département</label> <input type="text"
+																class="form-control" placeholder="nom de famille">
 														</div>
 													</div>
 													<div class="col-md-12">
