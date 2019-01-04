@@ -14,7 +14,9 @@ justify-content: flex-start;
 position: fixed;
 }
 
-
+.edit{
+	background-image: url('../assets/img/delete.png');
+}
 #deconnexion{
 	float: right;
 }

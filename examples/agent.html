@@ -54,9 +54,7 @@
 					<li><a class="nav-link" href="./users.html">
 							<p>Utilisateurs</p>
 						</a></li>
-					<li><a class="nav-link" href="./notifications.html">
-							<p>Notifications</p>
-						</a></li>
+					
 				</ul>
 			</div>
 		</div>
@@ -87,7 +85,7 @@
                 </div>
             </nav>
 			<!-- End Navbar -->
-			<button type="button" data-toggle="modal" data-target="#infos" class="btn btn-sm-md-1">Ajouter un agent</button>
+			
 			<div class="modal" id="infos">
 				<div class="modal-dialog">
 					<div class="content-modal container-fluid">
@@ -105,18 +103,22 @@
 														<label>Nom</label> <input type="text" class="form-control" placeholder="nom de famille">
 													</div>
 												</div>
-
 												<div class="row">
 													<div class="col-md-6">
 														<div class="form-group">
 															<label>Adresse e-mail</label> <input type="text" class="form-control" placeholder="Adresse e-mail">
 														</div>
 													</div>
-													<div class="col-md-6">
-														<div class="form-group">
-															<label>Département</label> <input type="text" class="form-control" placeholder="nom de famille">
-														</div>
-													</div>
+													<div class="form-group col-md-6">
+												    <label for="exampleSelect1">Choisissez un département</label>
+												    <select class="form-control" id="exampleSelect1">
+												      <option>Eure et Loir</option>
+												      <option>Loiret</option>
+												      <option>Cher</option>
+												      <option>Indre et Loire</option>
+												      <option>Indre</option>
+												    </select>
+												  </div>
 													<div class="col-md-12">
 														<div class="form-group">
 															<label>numéro de téléphone</label> <input type="text" class="form-control" placeholder="numéro de telephone">
@@ -157,11 +159,11 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>1</td>
+												<td>1 </td>
 												<td>Olivier</td>
 												<td>RANCHER</td>
 												<td>0247674467</td>
-												<td>erik.bezin@regioncentre.fr</td>
+												<td>erik.bezin@regioncentre.fr </td>
 											</tr>
 											<tr>
 												<td>2</td>
