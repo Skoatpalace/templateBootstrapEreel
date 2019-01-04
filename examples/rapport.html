@@ -14,6 +14,8 @@
     <!-- CSS Files -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.1" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet" />
+    <link href="../assets/css/fix-dropdown.css" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
 
     <link rel="stylesheet" type="text/css" href="../assets/css/theme.css" />
@@ -129,7 +131,7 @@
 
                                     <label for="rapport-date-input" class="col-4 col-form-label">Date</label>
                                     <div class="col-md-6">
-                                        <input class="form-control datepicker" type="date" value="01-04-2019" id="rapport-date-input">
+                                        <input class="form-control datepicker-test" type="text" value="" id="rapport-date-input">
                                         
 
                                     </div>
@@ -307,8 +309,18 @@ datepicker
 <script src="../assets/js/plugins/chartist.min.js"></script>
 <!--  Notifications Plugin    -->
 <script src="../assets/js/plugins/bootstrap-notify.js"></script>
-<script src="../assets/js/plugins/bootstrap-datepicker.js" charset="UTF-8"></script>
+<script src="../assets/js/bootstrap-datepicker.min.js" charset="UTF-8"></script>
+<script src="../assets/locales/bootstrap-datepicker.fr.min.js" charset="UTF-8"></script>
 <!-- Control Center for Light Bootstrap Dashboard: scripts for the example pages etc -->
 <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.1" type="text/javascript"></script>
-
+<script type="text/javascript">
+$(function() {
+	$('.datepicker-test').datepicker({
+        autoclose: true,
+		language: 'fr',
+		format: 'dd/mm/yyyy',
+	});
+	$('.datepicker-test').datepicker('update', new Date());
+});
+</script>
 </html>
