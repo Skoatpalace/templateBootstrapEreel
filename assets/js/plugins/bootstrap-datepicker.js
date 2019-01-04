@@ -3,7 +3,6 @@
  *
  * Licensed under the Apache License v2.0 (http://www.apache.org/licenses/LICENSE-2.0)
  */
-
 (function(factory) {
     if (typeof define === "function" && define.amd) {
         define(["jquery"], factory);
@@ -1741,14 +1740,16 @@
     $.fn.datepicker.Constructor = Datepicker;
     var dates = $.fn.datepicker.dates = {
         en: {
-            days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-            daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
-            months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-            today: "Today",
-            clear: "Clear",
-            titleFormat: "MM yyyy"
+            days: ["Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"],
+            daysShort: ["Dim", "Lun", "Mar", "Mer", "Jeu", "Ven", "Sam"],
+            daysMin: ["Di", "Lu", "Ma", "Me", "Je", "Ve", "Sa"],
+            months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Decembre"],
+            monthsShort: ["Janv", "Fev", "Mars", "Avr", "Mai", "Juin", "Juill", "Août", "Sep", "Oct", "Nov", "Dec"],
+            today: "Aujourd'hui",
+            clear: "Effacer",
+            format: "dd/mm/yyyy",
+            titleFormat: "MM yyyy",
+            weekStart: 0
         }
     };
 
